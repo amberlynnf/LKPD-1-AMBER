@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hitung Mundur(Project 5)</title>
+  <style>
+    body {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+    }
+    .container {
+      display: inline-block;
+      margin: 20px;
+    }
+    .countdown {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #2e1547;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+    }
+    #stop {
+      background-color: #cbb8e6;
+      margin-top: 10px;
+    }
+    .time-up {
+      color: #cbb8e6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hitung Mundur</h1>
+  <div class="container">
+    <div class="countdown">10</div>
+    <button id="start">Mulai</button>
+    <button id="stop">Berhenti</button>
+  </div>
+
+  <script>
+    let countdown = 10;
+    let timer;
+    const countdownEl = document.querySelector('.countdown');
+    const startBtn = document.getElementById('start');
+    const stopBtn = document.getElementById('stop');
+
+    function startCountdown() {
+      timer = setInterval(function() {
+        countdownEl.textContent = countdown;
+        countdown--;
+
+        if (countdown < 0) {
+          clearInterval(timer);
+          countdownEl.textContent = 'Waktu Habis';
+          countdownEl.classList.add('time-up');
+        }
+      }, 1000);
+    }
+
+    function stopCountdown() {
+      clearInterval(timer);
+      countdownEl.textContent = 'Dihentikan';
+      countdownEl.classList.remove('time-up');
+    }
+
+    startBtn.addEventListener('click', startCountdown);
+    stopBtn.addEventListener('click', stopCountdown);
+  </script>
+</body>
+</html>

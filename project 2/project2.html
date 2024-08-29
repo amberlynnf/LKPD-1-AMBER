@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page(project 2)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-cat"></i> Lynnie's Kitten Wonder !</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Types</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="types">
+        <div class="type">
+            <img src="Ragdollcat.jpg" alt="Type 1">
+            <h2>Ragdoll Cat</h2>
+            <p><i class="fa-solid fa-dollar-sign"></i>450</p>
+            <p><i class="fa-solid fa-cash-register"></i> Buyers : 9k+</p>
+            <p><i class="fa-brands fa-gratipay fa-bounce"></i> Likes : 100k+</p>
+            <div class="teks">
+            <h4>The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. American breeder Ann Baker developed Ragdolls in the 1960s. They are best known for their docile, placid temperament and affectionate nature.</h4>
+        </div>
+            <button>Read More</button>
+        </div>
+        <div class="type">
+            <img src="MaineCoonCat.jpg" alt="Type 2">
+            <h2>MaineCoon Cat</h2>
+            <p><i class="fa-solid fa-dollar-sign"></i>1,000</p>
+            <p><i class="fa-solid fa-cash-register"></i> Buyers : 9.7k+</p>
+            <p><i class="fa-brands fa-gratipay fa-bounce"></i> Likes : 233k+</p>
+            <div class="teks">
+            <h4>The Maine Coon is massive, but this breed is gentle and kind. The Maine Coon cat has existed in the U.S. since the 1800s and is considered the oldest native cat breed in the U.S. Rugged and solidly built, the Maine Coon cat is known for its massive size, shaggy coat, and large tufted ears reminiscent of a bobcat.</h4>
+            </div>
+            <button>Read More</button>
+        </div>
+        <div class="type">
+            <img src="Munchkincat.jpg" alt="Type 3">
+            <h2>Munchkin Cat</h2>
+            <p><i class="fa-solid fa-dollar-sign"></i>1,500</p>
+            <p><i class="fa-solid fa-cash-register"></i> Buyers : 13k+</p>
+            <p><i class="fa-brands fa-gratipay fa-bounce"></i> Likes : 378k+</p>
+            <div class="teks">
+            <h4>They are playful, outgoing and easy to train. They are very sociable and loving cats who make fantastic family pets as they get along well with children and other pets. Don't assume their small size prevents them from doing what cats do best – Munchkins can run and jump just like any other breed of cat.</h4>
+            </div>
+            <button>Read More</button>
+        </div>
+    </section>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(Coolbg.jpg);
+}
+
+header {
+    background-color: #74775e;
+    color: rgb(239, 240, 217);
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(239, 240, 217);
+    text-decoration: none;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.type {
+    text-align: center;
+    border: 1px solid rgb(239, 240, 217);
+    padding: 1rem;
+    width: 200px;
+    background-color: #d8d7c8;
+   
+}
+
+.type img {
+    max-width: 100%;
+    height: auto;
+}
+
+.teks {
+    text-align: justify;
+}
+
+button {
+    background-color: #74775e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4e4f46;
+}
+
+</style>
